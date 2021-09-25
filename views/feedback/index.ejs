@@ -1,0 +1,43 @@
+<%- include("../partials/header.ejs") %>
+
+
+
+<div class="container text-left " style="min-height: 78vh;">
+    <div class="row justify-content-center" style="font-family: Roboto, sans-serif;">
+        <div class="col-sm-12 col-md-9" style="box-shadow: 0px 0px;">
+            <div>
+                <h4 id="article-heading" style="font-size: 29px ;">&nbsp;Your Feedbacks</h4>
+            </div>
+
+            <% feedback.forEach(function(feedback){ %>
+            <div class="card" style="margin: 0px;margin-bottom: 12px;box-shadow: 0px 0px 11px rgb(239,239,239);">
+                <div class="card-body">
+                    <div class="media about-author" style="font-family: Lato, sans-serif;font-weight: bold;padding-left: 1px;padding-right: 1px;">
+                        <div class="media-body">
+                            <p style="margin-bottom: 0px;font-size: 18px;margin-top: 4px;"><%= feedback.username %> 
+                            
+                            </p>
+                             <% const date =  feedback.created_at.toString()%> 
+                            <p style="margin-bottom: 0px;font-size: 14px;color: rgb(105,116,127);">
+                                <%= date.substring(0, 3) + " | " + date.substring(3, 15) + " | " + date.substring(15, 25)%> 
+                            </p>
+                        </div>
+                    </div>
+                    <hr style="margin-top: 0px; ">
+                    <h4 class="card-title" style="font-weight: bold;color: rgb(63,72,81);font-family: Lato, sans-serif; font-size: 20px;"><%= feedback.service %> </h4>
+                    <p class="card-text article-text" style="font-family: Lato, sans-serif;"><%= feedback.description %> </p>
+                    <% if(current_user.usertype != 'admin'){ %> 
+                    <div class="text-right" style="font-family: Lato, sans-serif;"><a class="card-link" href="#">Edit</a><a class="card-link" href="#">Delete</a></div>
+                    <% } %> 
+                    <% if(current_user.usertype == 'admin'){ %> 
+                        <div class="text-right" style="font-family: Lato, sans-serif;"><a class="card-link" href="#">Reply</a></div>
+                        <% } %> 
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+</div>
+
+
+<%- include("../partials/footer.ejs") %>

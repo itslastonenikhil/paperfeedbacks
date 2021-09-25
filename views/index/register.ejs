@@ -1,0 +1,21 @@
+<%- include("../partials/header.ejs") %>
+
+<div class="container text-center fullscreen" >
+    <div class="row" id="form">
+        <div class="col"></div>
+        <div class="col-sm-12 col-md-8 col-lg-6">
+            <div id="register-form">
+                <h3 class="text-center">Register</h3>
+                <form class="text-left" id="form-content" method="post" action="/register">
+                    <label>Email</label><input class="form-control" type="email" name="email">
+                    <label>Username</label><input class="form-control" type="text" name="username">
+                    <label>Password</label><input class="form-control" type="password" name="password">
+                    <div class="text-right" style="margin-top: 10px;"><button class="btn btn-primary submit-form" type="submit" style="color: var(--light);background: var(--cyan);border-color: var(--info);">Register</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+<%- include("../partials/footer.ejs") %>
