@@ -1,0 +1,334 @@
+#Intro-heading {
+  margin-top: 3rem;
+}
+
+#Into-steps {
+  margin-top: 3rem;
+}
+
+#Intro-getStarted {
+  margin-top: 3rem;
+  color: white;
+}
+
+#footer-basic {
+  margin-top: 4rem;
+  margin-bottom: 0px;
+  padding: 3px;
+}
+
+#footer-basic {
+  color: rgb(255,255,255);
+  background-color: #000000;
+}
+
+#Intro {
+  height: 86vh;
+}
+
+#copyright {
+  margin-top: 10px;
+}
+
+
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+#popover-content {
+  display: none;
+  padding: 6px 8px 3px 8px;
+  text-decoration: none;
+  color: rgb(44,62,80);
+}
+
+.pop-link:hover {
+  text-decoration: none;
+  padding: 4px;
+  /*color: rgb(44,62,80);*/
+  margin: 4px;
+}
+
+.pop-item {
+  margin-top: 10px;
+}
+
+.pop-link {
+  color: rgb(44,62,80);
+}
+
+#popover-btn {
+  border-radius: 50%;
+}
+
+#register-form {
+  padding: 10px;
+  /*max-width: 60%;*/
+}
+
+#form-content {
+  padding: 20px;
+}
+
+@media (min-width: 300px) {
+  #form {
+    margin-top: 16vh;
+    overflow: hidden;
+  }
+}
+
+
+#profile-img {
+  width: 160px;
+  height: 160px;
+}
+
+#userbio {
+  font-size: 16px;
+}
+
+#profile-div {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#profile-data {
+  padding: 10px;
+}
+
+#username {
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+#profile-img-col {
+  padding: 12px;
+  /*background-color: rgb(246,250,250);*/
+}
+
+#profile-row {
+  margin-top: 10px;
+}
+
+#edit-profile-btn {
+  background-color: rgba(128,128,128,0);
+  color: rgb(13,174,209);
+  border-color: rgb(4,93,113);
+}
+
+.follow-link {
+  padding: 4px;
+}
+
+.d-inline.follow {
+  font-size: 11px;
+  margin-left: 5px;
+  padding: 10px 6px;
+  border-radius: 21px;
+  background-color: rgb(232,239,240);
+}
+
+.d-inline.follow-no {
+  /*font-size: 14px;*/
+  padding: 5px;
+  margin-right: 4px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  /*margin-top: 10px;*/
+  /*margin-bottom: 10px;*/
+}
+
+.follow-link {
+  color: black;
+  text-decoration: none;
+}
+
+.follow-link:hover {
+  text-decoration: none;
+}
+
+.follow-link {
+  font-size: 14px;
+}
+
+#follow {
+  padding: 6px;
+  margin-top: 8px;
+}
+
+.card-link {
+  padding: 2px;
+}
+
+.card-text.article-text {
+  font-size: 16px;
+}
+
+#article-heading {
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#editor {
+  height: 10vh;
+}
+
+#article-author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.author-social-link {
+  padding: 3px;
+  margin: 1px;
+}
+
+#content {
+  margin-top: 30px;
+}
+
+#content-main {
+  margin-top: 20px;
+}
+
+#content-main img {
+  /*width: 100%;*/
+  margin: auto;
+}
+
+#content-main p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#content-main ol, ul, dl {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.icons {
+  /*width: 60px;*/
+  /*height: auto;*/
+  font-size: 26px;
+  /*margin-top: 3px;*/
+  /*padding-top: 5px;*/
+}
+
+.author-social-link img {
+  width: 20px;
+  height: auto;
+}
+
+
+
+.author-social-links {
+  margin: 2px;
+  padding: 3px;
+  color: rgb(67,67,67);
+}
+
+body {
+  overflow-x: hidden;
+  /*overflow: hidden;*/
+}
+
+#col-left .card-text {
+  font-size: 14px;
+  color: grey;
+}
+
+#cardbox {
+  position: fixed;
+  width: 18%;
+  visibility: hidden;
+  height: auto;
+  top: 36vh;
+  left: 30px;
+}
+
+@media (min-width: 992px) {
+  #cardbox {
+    position: fixed;
+    width: 18%;
+    visibility: visible;
+    height: auto;
+    top: 36vh;
+    left: 50px;
+  }
+}
+
+#group-card {
+  border: 0px;
+}
+
+#article-group {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+@media (min-width: 992px) {
+  #article-group-bottom {
+    visibility: hidden;
+    height: 0px;
+  }
+}
+
+.comment-author-image {
+  height: 45px;
+  border-radius: 50%;
+  width: 45px;
+}
+
+.btn:hover {
+  color: #282727;
+  text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,0);
+}
+
+#comment-collapse {
+  text-decoration: none;
+  color: rgb(8,39,87);
+}
+
+#profile-row {
+  height: inherit;
+}
+
+#about {
+  padding: 40px;
+  margin: 20px;
+}
+
+#about-row {
+  margin-top: 9.2%;
+  margin-bottom: 9.2%;
+}
+
+.mr-3.card-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.media.about-author {
+  padding: 10px;
+  margin: 5px;
+}
+
+.fullscreen{
+  min-height: 60vh;
+}
+
+a{
+  color: var(--cyan);
+}
