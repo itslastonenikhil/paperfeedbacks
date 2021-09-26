@@ -1,7 +1,7 @@
 # Paper Feedbacks
 ## Feedback Management System
 
-An application for customer feedback management where a customer can log in and register a complaint or provide feedback for a service. We store the customer feedbacks into RDBMS tables.
+A web-based application for customer feedback management where a customer can log in and register a complaint or provide feedback for a service. We store the customer feedbacks into RDBMS tables.
 
 Admin can view and reply, logged complaints/feedbacks.
 
