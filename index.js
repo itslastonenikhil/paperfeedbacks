@@ -263,6 +263,7 @@ app.get("/feedback/:username/create", (req, res)=>{
 
 
 PORT = 4000
-app.listen(PORT, (req, res, err) =>{
+app.listen(PORT, process.env.IP, (req, res, err) =>{
     console.log(`Server started at http://localhost:${PORT}`)
+    console.log(`Server started at http://${process.env.IP}:${PORT}`)
 })
